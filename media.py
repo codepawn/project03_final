@@ -22,7 +22,9 @@ class Movie(Video):
 
 
 class TvShow(Video):
-    pass
+
+    def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
+        super().__init__(movie_title, movie_storyline, poster_image, trailer_youtube)
 
 
 def tester():
